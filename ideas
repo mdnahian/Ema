@@ -1,0 +1,15 @@
+(bot) Ema Child Safe Assistant
+	- Get Message
+		- Words
+		- Sentiment
+		- NSFW Images
+		- Potential harm to self or to others
+		- scan url links for content not suitable for children
+
+	- Send Warning to Parent
+		- Get Parent from child profile
+
+
+(bot) JudgeJudy
+	- Listen to arguments and choose a side
+	- Provide relevant facts and information that strengthens argument

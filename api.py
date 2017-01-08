@@ -8,7 +8,11 @@ class APICall:
 		self.access_token = access_token
 
 	def makeRequest(self, url):
-		return requests.get(url+'&access_token='+self.access_token).text
+		url = url+'?access_token='+self.access_token
+		# print url
+		return requests.get(url).text
 
-	def makeRequestPost(data, url):
-		return requests.get(url+'&access_token='+self.access_token, data).text
+	def makeRequestPost(self, url, data):
+		url = url+'?access_token='+self.access_token
+		# print url
+		return requests.post(url, json=json.loads(json.dumps(data))).text
